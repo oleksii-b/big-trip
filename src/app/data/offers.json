@@ -1,0 +1,202 @@
+[
+  {
+    "type": "taxi",
+    "offers": [{
+        "name": "Upgrade to a business class",
+        "title": "Upgrade to a business class",
+        "price": 130
+      },
+      {
+        "name": "Choose the radio station",
+        "title": "Choose the radio station",
+        "price": 150
+      },
+      {
+        "name": "Choose temperature",
+        "title": "Choose temperature",
+        "price": 50
+      },
+      {
+        "name": "Drive quickly, I'm in a hurry",
+        "title": "Drive quickly, I'm in a hurry",
+        "price": 190
+      },
+      {
+        "name": "Drive slowly",
+        "title": "Drive slowly",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "type": "bus",
+    "offers": [{
+        "name": "Infotainment system",
+        "title": "Infotainment system",
+        "price": 130
+      },
+      {
+        "name": "Order meal",
+        "title": "Order meal",
+        "price": 70
+      },
+      {
+        "name": "Choose seats",
+        "title": "Choose seats",
+        "price": 30
+      }
+    ]
+  },
+  {
+    "type": "train",
+    "offers": [{
+        "name": "Book a taxi at the arrival point",
+        "title": "Book a taxi at the arrival point",
+        "price": 110
+      },
+      {
+        "name": "Order a breakfast",
+        "title": "Order a breakfast",
+        "price": 180
+      },
+      {
+        "name": "Wake up at a certain time",
+        "title": "Wake up at a certain time",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "type": "flight",
+    "offers": [{
+        "name": "Choose meal",
+        "title": "Choose meal",
+        "price": 170
+      },
+      {
+        "name": "Choose seats",
+        "title": "Choose seats",
+        "price": 50
+      },
+      {
+        "name": "Upgrade to comfort class",
+        "title": "Upgrade to comfort class",
+        "price": 170
+      },
+      {
+        "name": "Upgrade to business class",
+        "title": "Upgrade to business class",
+        "price": 50
+      },
+      {
+        "name": "Add luggage",
+        "title": "Add luggage",
+        "price": 110
+      },
+      {
+        "name": "Business lounge",
+        "title": "Business lounge",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "type": "check-in",
+    "offers": [{
+        "name": "Choose the time of check-in",
+        "title": "Choose the time of check-in",
+        "price": 50
+      },
+      {
+        "name": "Choose the time of check-out",
+        "title": "Choose the time of check-out",
+        "price": 120
+      },
+      {
+        "name": "Add breakfast",
+        "title": "Add breakfast",
+        "price": 30
+      },
+      {
+        "name": "Laundry",
+        "title": "Laundry",
+        "price": 60
+      },
+      {
+        "name": "Order a meal from the restaurant",
+        "title": "Order a meal from the restaurant",
+        "price": 160
+      }
+    ]
+  },
+  {
+    "type": "sightseeing",
+    "offers": {}
+  },
+  {
+    "type": "ship",
+    "offers": [{
+        "name": "Choose meal",
+        "title": "Choose meal",
+        "price": 70
+      },
+      {
+        "name": "Choose seats",
+        "title": "Choose seats",
+        "price": 30
+      },
+      {
+        "name": "Upgrade to comfort class",
+        "title": "Upgrade to comfort class",
+        "price": 90
+      },
+      {
+        "name": "Upgrade to business class",
+        "title": "Upgrade to business class",
+        "price": 60
+      },
+      {
+        "name": "Add luggage",
+        "title": "Add luggage",
+        "price": 40
+      },
+      {
+        "name": "Business lounge",
+        "title": "Business lounge",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "type": "transport",
+    "offers": {}
+  },
+  {
+    "type": "drive",
+    "offers": [{
+        "name": "Choose comfort class",
+        "title": "Choose comfort class",
+        "price": 30
+      },
+      {
+        "name": "Choose business class",
+        "title": "Choose business class",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "offers": [{
+        "name": "Choose live music",
+        "title": "Choose live music",
+        "price": 110
+      },
+      {
+        "name": "Choose VIP area",
+        "title": "Choose VIP area",
+        "price": 190
+      }
+    ]
+  }
+]
