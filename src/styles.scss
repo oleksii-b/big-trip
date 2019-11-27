@@ -140,9 +140,9 @@ main {
   &__event-add-btn {
     min-width: 170px;
 
-    &::before {
-      content: '\002B\000A0';
-    }
+    // &::before {
+    //   content: '\002B\000A0';
+    // }
 
     &--hidden {
       display: none;
