@@ -2,12 +2,14 @@
   (click)="showDialog()">
 </button>
 
-<p-dialog [(visible)]="display" [style]="{width: '350px', minWidth: '200px'}">
+<p-dialog [(visible)]="display" [style]="{width: '600px', minWidth: '200px'}">
   <p-header>
     Add new event
   </p-header>
   <p-footer>
-    <button icon=" pi pi-check" pButton type="button" class="ui-button-rounded success"></button>
-    <button icon="pi pi-times" pButton type="button" class="ui-button-rounded danger"></button>
+    <button icon=" pi pi-check" pButton type="button" class="ui-button-rounded ui-button-rounded--success"
+      (click)="display=false"></button>
+    <button icon="pi pi-times" pButton type="button" class="ui-button-rounded ui-button-rounded--danger"
+      (click)="display=false"></button>
   </p-footer>
 </p-dialog>
