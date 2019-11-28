@@ -1,5 +1,5 @@
 <button icon="pi pi-plus" pButton type="button" label="New event" class="ui-button ui-button-warning btn"
-  (click)="showDialog()">
+  (click)="toggleDialog()">
 </button>
 
 <p-dialog [(visible)]="display" [style]="{width: '600px', minWidth: '200px'}" [modal]="true" [dismissableMask]="true">
@@ -8,8 +8,8 @@
   </p-header>
   <p-footer>
     <button icon=" pi pi-check" pButton type="button" class="ui-button-rounded ui-button-rounded--success"
-      (click)="display=false"></button>
+      (click)="toggleDialog()"></button>
     <button icon="pi pi-times" pButton type="button" class="ui-button-rounded ui-button-rounded--danger"
-      (click)="display=false"></button>
+      (click)="toggleDialog()"></button>
   </p-footer>
 </p-dialog>

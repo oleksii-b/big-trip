@@ -8,9 +8,7 @@ import { Component } from '@angular/core';
 export class NewEventComponent {
   display = false;
 
-  constructor() { }
-
-  showDialog() {
-    this.display = true;
+  toggleDialog(): void {
+    this.display = !this.display;
   }
 }
