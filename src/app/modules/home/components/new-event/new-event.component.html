@@ -2,7 +2,7 @@
   (click)="showDialog()">
 </button>
 
-<p-dialog [(visible)]="display" [style]="{width: '600px', minWidth: '200px'}">
+<p-dialog [(visible)]="display" [style]="{width: '600px', minWidth: '200px'}" [modal]="true" [dismissableMask]="true">
   <p-header>
     Add new event
   </p-header>

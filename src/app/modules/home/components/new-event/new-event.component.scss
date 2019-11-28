@@ -1,25 +1,28 @@
-.ui-button {
+.ui-button[class][type] {
+  background-color: #ffd054;
   border-radius: 27px;
-  background-color: #ffd054 !important;
   color: #424242;
   font-size: 18px;
-  padding: 6px 0;
   min-width: 170px;
+  padding: 6px 0;
+
   &:hover {
     color: #0d8ae4;
   }
 
-  &.ui-button-rounded {
-    font-size: 12px;
-    padding: 2px;
-    min-width: 60px;
+  &[class].ui-button-rounded {
     border-color: #f2f2f2;
     color: #f2f2f2;
+    font-size: 12px;
+    min-width: 60px;
+    padding: 2px;
+
     &--success {
-    background-color: #0d8ae4 !important;
+      background-color: #0d8ae4;
     }
+
     &--danger {
-    background-color: #e48e0d !important;
+      background-color: #e48e0d;
     }
   }
 }
