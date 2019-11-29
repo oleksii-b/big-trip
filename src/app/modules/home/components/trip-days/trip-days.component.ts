@@ -33,18 +33,19 @@ export class TripDaysComponent {
         })),
       )
       .subscribe((points): void => {
-        const tripDays = {};
+        const tripDays: {[key: number]: any} = {};
         const dates: number[] = [];
 
         points.forEach((point): void => {
           const {start} = point;
+          const dateFrom = new Date(start).setHours(0, 0, 0, 0);
 
-          if (tripDays[start]) {
-            tripDays[start].push(point);
+          if (tripDays[dateFrom]) {
+            tripDays[dateFrom].push(point);
           } else {
-            tripDays[start] = [point];
+            tripDays[dateFrom] = [point];
 
-            dates.push(start);
+            dates.push(dateFrom);
           }
         });
 
