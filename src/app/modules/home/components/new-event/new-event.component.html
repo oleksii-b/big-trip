@@ -1,15 +1,37 @@
-<button icon="pi pi-plus" pButton type="button" label="New event" class="ui-button ui-button-warning btn"
-  (click)="toggleDialog()">
-</button>
+<button
+  icon="pi pi-plus"
+  pButton type="button"
+  label="New event"
+  class="btn-open ui-button-rounded ui-button-warning"
+  (click)="toggleDialog()"
+></button>
 
-<p-dialog [(visible)]="display" [style]="{width: '600px', minWidth: '200px'}" [modal]="true" [dismissableMask]="true">
+<p-dialog
+  #dialog
+  [(visible)]="display"
+  [style]="{width: '600px', minWidth: '200px'}"
+  [modal]="true" [dismissableMask]="true"
+>
   <p-header>
     Add new event
   </p-header>
+
   <p-footer>
-    <button icon=" pi pi-check" pButton type="button" class="ui-button-rounded ui-button-rounded--success"
-      (click)="toggleDialog()"></button>
-    <button icon="pi pi-times" pButton type="button" class="ui-button-rounded ui-button-rounded--danger"
-      (click)="toggleDialog()"></button>
+    <button
+      icon="pi pi-check"
+      pButton
+      type="button"
+      label="Add"
+      class="ui-button-rounded ui-button-success"
+      (click)="toggleDialog()"
+    ></button>
+
+    <button
+      icon="pi pi-times"
+      pButton type="button"
+      label="Cancel"
+      class="ui-button-rounded ui-button-danger"
+      (click)="toggleDialog()"
+    ></button>
   </p-footer>
 </p-dialog>

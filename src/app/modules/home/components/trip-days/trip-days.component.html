@@ -1,8 +1,13 @@
 <ul class="trip-days">
-  <li *ngFor="let day of days" class="trip-days__item day">
+  <li *ngFor="let day of days" class="day">
     <div class="day__info">
       <span class="day__counter">{{day.date}}</span>
-      <time class="day__date" datetime="2019-03-18">{{day.month}} {{day.year}}</time>
+      <time class="day__date" [dateTime]="day.toString()">{{day.month}} {{day.year}}</time>
     </div>
+
+    <app-trip-events
+      [events]="events[day.dateTime]"
+    ></app-trip-events>
   </li>
 </ul>
+
