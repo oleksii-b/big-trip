@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
-import { DialogModule } from 'primeng/dialog';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomePageComponent } from './pages/home/home-page.component';
@@ -19,8 +17,6 @@ import { TripEventsComponent } from './components/trip-events/trip-events.compon
   imports: [
     CommonModule,
     HomeRoutingModule,
-    ButtonModule,
-    DialogModule,
   ]
 })
-export class HomeModule { }
+export class HomeModule {}
