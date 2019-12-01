@@ -63,6 +63,9 @@ export class TripDaysComponent {
         date: dateTime.getDate(),
         month: dateTime.toString().split(' ')[1],
         year: dateTime.getFullYear(),
+        toString(): string {
+          return `${this.year}-${dateTime.getMonth()}-${this.date}`;
+        },
       };
     });
 

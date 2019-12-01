@@ -9,6 +9,7 @@ import { HomePageComponent } from './pages/home/home-page.component';
 import { SortingComponent } from './components/sorting/sorting.component';
 import { NewEventComponent } from './components/new-event/new-event.component';
 import { TripDaysComponent } from './components/trip-days/trip-days.component';
+import { TripEventsComponent } from './components/trip-events/trip-events.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TripDaysComponent } from './components/trip-days/trip-days.component';
     SortingComponent,
     NewEventComponent,
     TripDaysComponent,
+    TripEventsComponent,
   ],
   imports: [
     CommonModule,

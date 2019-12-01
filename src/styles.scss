@@ -33,6 +33,124 @@ main {
   width: 1px;
 }
 
+.page-body {
+  background-color: #f2f2f2;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 17px;
+  height: 100%;
+  line-height: 1.2;
+  margin: 0;
+  min-width: 1200px;
+  padding: 0;
+
+  &__container {
+    box-sizing: border-box;
+    flex-grow: 1;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    width: 1200px;
+    z-index: 0;
+
+    &::after {
+      background-color: rgba(255, 255, 255, 0.58);
+      bottom: 0;
+      content: '';
+      left: 130px;
+      position: absolute;
+      top: 0;
+      width: 2px;
+      z-index: -1;
+    }
+  }
+}
+
+.btn {
+  align-items: center;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 21px;
+  padding: 4px 16px 5px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  user-select: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--big {
+    border-radius: 27px;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 17px 29px 16px;
+  }
+
+  &--yellow {
+    background-color: #ffd054;
+    color: #424242;
+  }
+
+  &--blue {
+    background-color: #0d8ae4;
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.46;
+  }
+}
+
+.trip-main {
+  align-items: flex-start;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
+
+
+  &--hidden {
+    display: none;
+  }
+
+  &__trip-info {
+    margin-bottom: 35px;
+    width: 100%;
+  }
+
+  &__trip-controls {
+    width: 600px;
+  }
+
+  &__event-add-btn {
+    min-width: 170px;
+
+    &::before {
+      content: '\002B\000A0';
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+
 .trip-info {
   align-items: center;
   display: flex;
@@ -279,6 +397,18 @@ main {
   }
 }
 
+.trip-events {
+  padding-top: 22px;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__trip-sort {
+    margin-bottom: 8px;
+  }
+}
+
 .trip-events__msg {
   color: #fff;
   font-size: 44px;
@@ -303,6 +433,40 @@ main {
 .trip-events__item {
   margin-bottom: 54px;
   margin-left: auto;
+}
+
+.trip-days {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.day {
+  align-items: flex-start;
+  display: flex;
+
+  &__info {
+    margin-right: 15px;
+    padding-top: 13px;
+    width: 65px;
+  }
+
+  &__counter {
+    display: block;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 61px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  &__date {
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .event {
