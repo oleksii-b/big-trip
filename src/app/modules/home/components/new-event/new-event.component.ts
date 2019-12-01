@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Dialog } from 'primeng/dialog';
 
 @Component({
   selector: 'app-new-event',
@@ -7,7 +8,7 @@ import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class NewEventComponent implements AfterViewInit {
   @ViewChild('dialog', {static: false})
-  dialogRef: ElementRef;
+  dialogRef: Dialog;
 
   display = false;
 
