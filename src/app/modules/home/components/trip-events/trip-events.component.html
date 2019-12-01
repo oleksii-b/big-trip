@@ -1,0 +1,49 @@
+<ul class="trip-events__list">
+  <li *ngFor="let event of events" class="trip-events__item">
+    <div class="event">
+      <div class="event__type">
+        <img class="event__type-icon" width="42" height="42" src="assets/img/icons/taxi.png" alt="Event type icon" />
+      </div>
+
+      <h3 class="event__title">
+        {{event.title}}
+      </h3>
+
+      <div class="event__schedule">
+        <p class="event__time">
+          <time class="event__start-time" datetime="2019-03-18T10:30">
+            {{event.start | date:'HH:mm'}}
+          </time>
+          —
+          <time class="event__end-time" datetime="2019-03-18T11:00">
+            {{event.end | date:'HH:mm'}}
+          </time>
+        </p>
+
+        <p class="event__duration">
+          {{event.duration}}
+        </p>
+      </div>
+
+      <p class="event__price">
+        €&nbsp;<span class="event__price-value">{{event.price}}</span>
+      </p>
+
+      <h4 class="visually-hidden">
+        Offers:
+      </h4>
+
+      <ul class="event__selected-offers">
+        <li *ngFor="let offer of event.offers" class="event__offer">
+          <span class="event__offer-title">{{offer.title}}</span>
+          +
+          €&nbsp;<span class="event__offer-price">{{offer.price}}</span>
+          </li>
+      </ul>
+
+      <button class="event__rollup-btn" type="button">
+        <span class="visually-hidden">Open event</span>
+      </button>
+    </div>
+  </li>
+</ul>
