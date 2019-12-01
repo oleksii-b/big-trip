@@ -17,7 +17,7 @@ export class TripDaysComponent {
     of(points)
       .pipe(
         map((points) => points.map((point) => {
-          const {id, type, destination: {name, pictures}, offers} = point;
+          const { id, type, destination: { name, pictures }, offers } = point;
 
           return {
             id,
@@ -29,7 +29,7 @@ export class TripDaysComponent {
             end: point.date_to,
             price: point.base_price,
             isFavorite: point.is_favorite,
-          }
+          };
         })),
       )
       .subscribe((points): void => {
@@ -37,7 +37,7 @@ export class TripDaysComponent {
         const dates: number[] = [];
 
         points.forEach((point): void => {
-          const {start} = point;
+          const { start } = point;
 
           if (tripDays[start]) {
             tripDays[start].push(point);
@@ -48,7 +48,7 @@ export class TripDaysComponent {
           }
         });
 
-        this.events = {...tripDays};
+        this.events = { ...tripDays };
         this.setDays(dates);
       });
   }
@@ -66,7 +66,7 @@ export class TripDaysComponent {
     });
 
     this.days = days.filter((day, i: number): boolean => {
-      const {date, month, year} = day;
+      const { date, month, year } = day;
 
       if (i) {
         return !(
