@@ -20,6 +20,7 @@
     height: 42px;
     margin-left: 100px;
     margin-right: 18px;
+    margin-left: 100px;
     min-width: 42px;
     width: 42px;
   }
@@ -29,4 +30,66 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.page-body {
+    background-color: #f2f2f2;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 17px;
+    height: 100%;
+    line-height: 1.2;
+    margin: 0;
+    min-width: 1200px;
+    padding: 0;
+  
+    &__container {
+      box-sizing: border-box;
+      flex-grow: 1;
+      margin: 0 auto;
+      padding: 0 10px;
+      position: relative;
+      width: 1200px;
+      z-index: 0;
+  
+      &::after {
+        background-color: rgba(255, 255, 255, 0.58);
+        bottom: 0;
+        content: '';
+        left: 130px;
+        position: absolute;
+        top: 0;
+        width: 2px;
+        z-index: -1;
+      }
+    }
+  }
+
+  .trip-main {
+  align-items: flex-start;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
+
+
+  &--hidden {
+    display: none;
+  }
+
+  &__trip-info {
+    margin-bottom: 35px;
+    width: 100%;
+  }
+
+  &__trip-controls {
+    width: 600px;
+  }
+}
+
+.trip-events {
+  padding-top: 22px;
 }
