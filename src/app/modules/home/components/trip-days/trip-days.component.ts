@@ -16,6 +16,7 @@ export class TripDaysComponent {
   constructor() {
     of(points)
       .pipe(
+        // tslint:disable-next-line:no-shadowed-variable
         map((points) => points.map((point) => {
           const { id, type, destination: { name, pictures }, offers } = point;
 
@@ -32,6 +33,7 @@ export class TripDaysComponent {
           };
         })),
       )
+      // tslint:disable-next-line:no-shadowed-variable
       .subscribe((points): void => {
         const tripDays: { [key: number]: any } = {};
         const dates: number[] = [];
