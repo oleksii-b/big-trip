@@ -12,6 +12,7 @@ import { NewEventComponent } from './components/new-event/new-event.component';
 import { TripDaysComponent } from './components/trip-days/trip-days.component';
 import { TripEventsComponent } from './components/trip-events/trip-events.component';
 import { TripEventsDataService } from './services/trip-events-data.service';
+import { TripEventsService } from './services/trip-events.service';
 import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
@@ -30,6 +31,9 @@ import { LayoutComponent } from './components/layout/layout.component';
     ButtonModule,
     DialogModule,
     InMemoryWebApiModule.forRoot(TripEventsDataService)
+  ],
+  providers: [
+    TripEventsService
   ]
 })
 export class HomeModule { }
