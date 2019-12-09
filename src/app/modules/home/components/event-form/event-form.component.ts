@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import eventTypes from '../../../../data/event-types.json';
 import offers from '../../../../data/offers.json';
-import { IEventType, IEventTypeOffer, IOffer } from '../../types/event';
+import { IEventType, IEventTypeOffer, IOffer } from '../../types/event.d';
 
 @Component({
   selector: 'app-event-form',
