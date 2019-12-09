@@ -11,6 +11,7 @@ import { NewEventComponent } from './components/new-event/new-event.component';
 import { TripDaysComponent } from './components/trip-days/trip-days.component';
 import { TripEventsComponent } from './components/trip-events/trip-events.component';
 import { TripEventsDataService } from './services/trip-events-data.service';
+import { EventFormComponent } from './components/event-form/event-form.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TripEventsDataService } from './services/trip-events-data.service';
     NewEventComponent,
     TripDaysComponent,
     TripEventsComponent,
+    EventFormComponent,
   ],
   imports: [
     CommonModule,

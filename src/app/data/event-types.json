@@ -1,0 +1,52 @@
+{
+  "transfer": {
+    "label": "Transfer",
+    "values": [
+      {
+        "value": "taxi",
+        "label": "Taxi"
+      },
+      {
+        "value": "bus",
+        "label": "Bus"
+      },
+      {
+        "value": "train",
+        "label": "Train"
+      },
+      {
+        "value": "ship",
+        "label": "Ship"
+      },
+      {
+        "value": "transport",
+        "label": "Transport"
+      },
+      {
+        "value": "drive",
+        "label": "Drive"
+      },
+      {
+        "value": "flight",
+        "label": "Flight"
+      }
+    ]
+  },
+  "activity": {
+    "label": "Activity",
+    "values": [
+      {
+        "value": "check-in",
+        "label": "Check-in"
+      },
+      {
+        "value": "sightseeing",
+        "label": "Sightseeing"
+      },
+      {
+        "value": "restaurant",
+        "label": "Restaurant"
+      }
+    ]
+  }
+}

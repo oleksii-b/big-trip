@@ -485,6 +485,7 @@ main {
 .event__header {
   align-items: center;
   display: flex;
+  font-size: 16px;
   padding: 20px;
 }
 
@@ -788,8 +789,7 @@ main {
 .event__favorite-btn {
   color: #ebebeb;
   cursor: pointer;
-  margin-left: 36px;
-  margin-right: 18px;
+  margin-left: auto;
   transition: color 0.2s;
 
   &:hover {

@@ -9,12 +9,16 @@
 <p-dialog
   #dialog
   [(visible)]="display"
-  [style]="{width: '600px', minWidth: '200px'}"
-  [modal]="true" [dismissableMask]="true"
+  [style]="{width: '840px', minWidth: '200px'}"
+  [modal]="true"
+  [dismissableMask]="true"
+  [blockScroll]="true"
 >
   <p-header>
     Add new event
   </p-header>
+
+  <app-event-form></app-event-form>
 
   <p-footer>
     <button
