@@ -6,6 +6,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomePageComponent } from './pages/home/home-page.component';
+import { StatsPageComponent } from './pages/stats/stats-page.component';
 import { SortingComponent } from './components/sorting/sorting.component';
 import { NewEventComponent } from './components/new-event/new-event.component';
 import { TripDaysComponent } from './components/trip-days/trip-days.component';
@@ -16,6 +17,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 @NgModule({
   declarations: [
     HomePageComponent,
+    StatsPageComponent,
     SortingComponent,
     NewEventComponent,
     TripDaysComponent,
