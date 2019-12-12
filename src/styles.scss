@@ -180,45 +180,10 @@ main {
   width: 170px;
 }
 
-.trip-controls__trip-tabs {
-  margin-bottom: 9px;
-}
-
 .trip-tabs {
   align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
-}
-
-.trip-tabs__btn {
-  color: inherit;
-  display: block;
-  font-size: 21px;
-  font-weight: 500;
-  line-height: 25px;
-  opacity: 0.8;
-  text-decoration: none;
-  transition: opacity 0.2s;
-  user-select: none;
-
-  &:not(:last-of-type) {
-    margin-right: 26px;
-  }
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  &--active,
-  &--active:hover,
-  &--active:active {
-    opacity: 1;
-    cursor: default;
-  }
 }
 
 .trip-filters {
