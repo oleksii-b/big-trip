@@ -1,33 +1,11 @@
-<header class="header">
-  <div class="header__container page-body__container">
-    <img class="header__logo" src="assets/img/logo.png" width="42" height="42" alt="Trip logo" />
+<app-layout>
+  <section class="trip-events">
+    <h2 class="visually-hidden">
+      Trip events
+    </h2>
 
-    <div class="trip-main">
-      <!-- Route -->
+    <app-sorting></app-sorting>
 
-      <div class="trip-main__trip-controls trip-controls">
-        <h2 class="visually-hidden">Switch trip view</h2>
-
-        <!-- Menu -->
-
-        <h2 class="visually-hidden">Filter events</h2>
-
-        <!-- Filters -->
-      </div>
-
-      <app-new-event></app-new-event>
-    </div>
-  </div>
-</header>
-
-<main class="main">
-  <div class="page-body__container">
-    <section class="trip-events">
-      <h2 class="visually-hidden">Trip events</h2>
-
-      <app-sorting></app-sorting>
-
-      <app-trip-days></app-trip-days>
-    </section>
-  </div>
-</main>
+    <app-trip-days></app-trip-days>
+  </section>
+</app-layout>
