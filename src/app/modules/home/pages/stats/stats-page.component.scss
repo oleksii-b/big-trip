@@ -1,0 +1,13 @@
+
+
+
+// visually hidden hasnt been transferred 
+
+.statistics {
+    padding-left: 37px;
+    padding-top: 47px;
+  
+    &__item:not(:last-child) {
+      margin-bottom: 78px;
+    }
+  }

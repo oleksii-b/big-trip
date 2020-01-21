@@ -1,0 +1,123 @@
+
+.trip-events__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+.trip-events__item {
+    margin-bottom: 54px;
+    margin-left: auto;
+}
+  
+.event {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 17px;
+    line-height: 21px;
+    padding: 20px;
+    width: 1100px;
+  
+&--edit {
+        background-color: #fff;
+        border-radius: 18px;
+        box-shadow: 0 11px 20px rgba(0, 0, 0, 0.043);
+        display: block;
+        padding: 0;
+    }
+}
+
+.event__type {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-shrink: 0;
+    height: 42px;
+    justify-content: center;
+    margin-right: 18px;
+    width: 42px;
+  }
+
+.event__type-icon {
+  display: block;
+  height: 17px;
+  width: 17px;
+}  
+.event__title {
+  flex-shrink: 0;
+  font-size: inherit;
+  font-weight: 400;
+  margin-right: 15px;
+  margin: 0;
+  width: 298px;
+}
+
+.event__schedule {
+  flex-shrink: 0;
+  margin-right: 15px;
+  width: 285px;
+}
+
+.event__time {
+  margin-bottom: 4px;
+  margin: 0;
+}
+
+.event__duration {
+    color: #999;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    line-height: 17px;
+    margin: 0;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+.event__price {
+  flex-shrink: 0;
+  margin-right: 15px;
+  margin: 0;
+  width: 96px;
+}
+
+.event__selected-offers {
+  font-weight: 600;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 230px;
+}
+
+.event__rollup-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    height: 45px;
+    margin-left: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 45px;
+  
+    &::after {
+      border-bottom: 2px solid #000;
+      border-right: 2px solid #000;
+      content: '';
+      height: 10px;
+      left: 50%;
+      position: absolute;
+      top: calc(50% - 5px);
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition: border-color 0.2s, transform 0.6s;
+      width: 10px;
+    }
+  
+    &:hover::after {
+      border-color: #0d8ae4;
+    }
+  }

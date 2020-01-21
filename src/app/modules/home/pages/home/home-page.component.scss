@@ -30,3 +30,15 @@
   flex-direction: column;
   flex-grow: 1;
 }
+
+.trip-events {
+  padding-top: 22px;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__trip-sort {
+    margin-bottom: 8px;
+  }
+}
