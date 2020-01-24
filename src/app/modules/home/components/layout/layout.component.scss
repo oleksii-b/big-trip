@@ -31,7 +31,6 @@
   flex-grow: 1;
 }
 
-// MY WORKS STARTS HERE
 .trip-main {
   align-items: flex-start;
   display: flex;
@@ -39,7 +38,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 10px;
-
 
   &--hidden {
     display: none;
@@ -63,53 +61,51 @@
   }
 }
 
-
 .trip-info {
   align-items: center;
   display: flex;
-}
 
-.trip-info__main {
-  width: 600px;
-}
+  &__main {
+    width: 600px;
+  }
 
-.trip-info__title {
-  font-size: 17px;
-  font-weight: 800;
-  line-height: 21px;
-  margin: 0 0 4px;
-}
-
-.trip-info__dates {
-  font-size: 13px;
+  &__title {
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 21px;
+    margin: 0 0 4px;
+  }
+  
+  &__dates {
+    font-size: 13px;
   font-weight: 800;
   line-height: 16px;
   margin: 0;
   opacity: 0.8;
   text-transform: uppercase;
-}
+  }
 
-.trip-info__cost {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 25px;
-  margin: 0 0 0 auto;
-  text-align: center;
-  width: 170px;
-}
+  &__cost {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    margin: 0 0 0 auto;
+    text-align: center;
+    width: 170px;
+  }
 
-.trip-controls__trip-tabs {
-  margin-bottom: 9px;
+  &__trip-tabs {
+    margin-bottom: 9px;
+  }
 }
 
 .trip-tabs {
   align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
-}
 
-.trip-tabs__btn {
-  color: inherit;
+  &__btn {
+    color: inherit;
   display: block;
   font-size: 21px;
   font-weight: 500;
@@ -119,23 +115,23 @@
   transition: opacity 0.2s;
   user-select: none;
 
-  &:not(:last-of-type) {
-    margin-right: 26px;
-  }
+    &:not(:last-of-type) {
+      margin-right: 26px;
+    }
 
-  &:hover {
-    opacity: 1;
-  }
+    &:hover {
+      opacity: 1;
+    }
 
-  &:active {
-    opacity: 0.6;
-  }
+    &:active {
+      opacity: 0.6;
+    }
 
-  &--active,
-  &--active:hover,
-  &--active:active {
-    opacity: 1;
-    cursor: default;
+    &--active,
+    &--active:hover,
+    &--active:active {
+      opacity: 1;
+      cursor: default;
+    }
   }
 }
-
