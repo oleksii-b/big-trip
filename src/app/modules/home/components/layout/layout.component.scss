@@ -78,11 +78,11 @@
   
   &__dates {
     font-size: 13px;
-  font-weight: 800;
-  line-height: 16px;
-  margin: 0;
-  opacity: 0.8;
-  text-transform: uppercase;
+    font-weight: 800;
+    line-height: 16px;
+    margin: 0;
+    opacity: 0.8;
+    text-transform: uppercase;
   }
 
   &__cost {
@@ -105,7 +105,7 @@
   flex-wrap: wrap;
 
   &__btn {
-    color: inherit;
+  color: inherit;
   display: block;
   font-size: 21px;
   font-weight: 500;
