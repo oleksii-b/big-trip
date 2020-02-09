@@ -1,22 +1,29 @@
-import { Component } from '@angular/core';
-import { of } from 'rxjs';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import points from '../../../../data/points.json';
+import { TripEventsService } from '../../services/trip-events.service';
+import { Point } from '../types/point';
 
 @Component({
   selector: 'app-trip-days',
   templateUrl: './trip-days.component.html',
   styleUrls: ['./trip-days.component.scss']
 })
-export class TripDaysComponent {
+export class TripDaysComponent implements OnInit, OnDestroy {
   events: any;
   days: any[] = [];
+  pointsSub: Subscription;
 
-  constructor() {
-    of(points)
+  constructor(private tripEventsService: TripEventsService) { }
+
+  ngOnInit() {
+    this.fetchPoints();
+  }
+
+  fetchPoints() {
+    this.pointsSub = this.tripEventsService.getAllPoints()
       .pipe(
-        // tslint:disable-next-line:no-shadowed-variable
         map((points) => points.map((point) => {
           const { id, type, destination: { name, pictures }, offers } = point;
 
@@ -33,7 +40,6 @@ export class TripDaysComponent {
           };
         })),
       )
-      // tslint:disable-next-line:no-shadowed-variable
       .subscribe((points): void => {
         const tripDays: { [key: number]: any } = {};
         const dates: number[] = [];
@@ -84,5 +90,11 @@ export class TripDaysComponent {
 
       return true;
     });
+  }
+
+  ngOnDestroy() {
+    if (this.pointsSub) {
+      this.pointsSub.unsubscribe();
+    }
   }
 }

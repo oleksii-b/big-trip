@@ -5,9 +5,6 @@
       <time class="day__date" [dateTime]="day.toString()">{{day.month}} {{day.year}}</time>
     </div>
 
-    <app-trip-events
-      [events]="events[day.dateTime]"
-    ></app-trip-events>
+    <app-trip-events [events]="events[day.dateTime]"></app-trip-events>
   </li>
 </ul>
-
