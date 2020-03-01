@@ -12,11 +12,9 @@ import { SortingComponent } from './components/sorting/sorting.component';
 import { NewEventComponent } from './components/new-event/new-event.component';
 import { TripDaysComponent } from './components/trip-days/trip-days.component';
 import { TripEventsComponent } from './components/trip-events/trip-events.component';
-
 import { TripEventsDataService } from './services/trip-events-data.service';
 import { TripEventsService } from './services/trip-events.service';
 import { LayoutComponent } from './components/layout/layout.component';
-
 
 @NgModule({
   declarations: [

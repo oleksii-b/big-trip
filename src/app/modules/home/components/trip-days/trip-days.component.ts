@@ -3,7 +3,6 @@ import { Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import { TripEventsService } from '../../services/trip-events.service';
-import { Point } from '../types/point';
 
 @Component({
   selector: 'app-trip-days',
@@ -13,7 +12,7 @@ import { Point } from '../types/point';
 export class TripDaysComponent implements OnInit, OnDestroy {
   events: any;
   days: any[] = [];
-  pointsSub: Subscription;
+  points$: Subscription;
 
   constructor(private tripEventsService: TripEventsService) { }
 
@@ -21,8 +20,8 @@ export class TripDaysComponent implements OnInit, OnDestroy {
     this.fetchPoints();
   }
 
-  fetchPoints() {
-    this.pointsSub = this.tripEventsService.getAllPoints()
+  fetchPoints(): void {
+    this.points$ = this.tripEventsService.getAllPoints()
       .pipe(
         map((points) => points.map((point) => {
           const { id, type, destination: { name, pictures }, offers } = point;
@@ -93,8 +92,8 @@ export class TripDaysComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    if (this.pointsSub) {
-      this.pointsSub.unsubscribe();
+    if (this.points$) {
+      this.points$.unsubscribe();
     }
   }
 }
